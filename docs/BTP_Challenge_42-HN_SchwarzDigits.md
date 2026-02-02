@@ -142,7 +142,7 @@ Runtime services explicitly listed:
 
 “Runtime on SAP BTP” examples listed:
 - SAP HANA database
-- SAP BTP, ABAP environment
+- SAP BTP 
 - SAP Integration Suite
 
 ### 5.4 Frontend requirements (Fiori)
@@ -162,16 +162,6 @@ Mission requires storing documents in an **S3 bucket** (explicitly mentioned and
 ### 5.6 Integration edges
 - **Cloud Connector** to reach SAP on-premise systems.
 - Third-party storage integration example: **STACKIT S3 Bucket**.
-
-## 6) Optional / future capabilities
-### Generative AI Hub (optional)
-The architecture includes an optional “Generative AI Hub,” listing:
-- SAP AI Launchpad
-- SAP AI Core (Prompt Registry & Optimization)
-- Orchestration capabilities (grounding, templating, data masking, I/O filtering, translation)
-- Foundation model access (partner-built and SAP-built)
-
-Interpretation: GenAI is not required for the core mission but may be added later.
 
 ### SAP Document AI (listed service)
 SAP Document AI is listed under BTP services in the architecture diagram, indicating a potential extension for document understanding or extraction, but it is not defined as a mandatory mission step.
