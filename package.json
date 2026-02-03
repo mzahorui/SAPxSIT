@@ -1,0 +1,17 @@
+{
+  "name": "sap_sit",
+  "version": "1.0.0",
+  "description": "Data Retrieval from External Suppliers",
+  "dependencies": {
+    "@sap/cds": "^9",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "dev": "cds watch"
+  },
+  "private": true
+}

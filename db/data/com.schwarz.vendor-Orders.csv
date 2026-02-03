@@ -1,0 +1,8 @@
+ID,orderNumber,orderDate,expectedDeliveryDate,status,netAmount,taxAmount,grossAmount,currency,paymentTerms,incoterms,itemsCount,supplier_ID
+"0b7c1d2e-3f4a-4b5c-8d9e-001122334455","PO-2026-0001","2026-01-10","2026-01-24","Approved",12500.00,2375.00,14875.00,"EUR","Net 30","DAP",48,"3f3b8c2e-8b6a-4a7a-9a9a-1f2d3c4b5a60"
+"1a2b3c4d-5e6f-4789-9abc-112233445566","PO-2026-0002","2026-01-12","2026-01-28","Created",7800.00,1560.00,9360.00,"EUR","2% 10, Net 30","DAP",30,"8a0f1a6b-0d12-4c22-9ed3-0c7e2a9b1c11"
+"2b3c4d5e-6f70-489a-abcd-223344556677","PO-2026-0003","2026-01-14","2026-02-05","Shipped",5400.00,0.00,5400.00,"EUR","Net 14","FCA",18,"1c4c2f7d-1a3d-4b6f-9a7a-2bb3c5d6e7f8"
+"3c4d5e6f-7081-49ab-bcde-334455667788","PO-2026-0004","2026-01-18","2026-02-10","Delivered",9200.00,0.00,9200.00,"CAD","Net 30","DAP",22,"5d6e7f80-1234-4abc-9def-112233445566"
+"4d5e6f70-8192-4abc-cdef-445566778899","PO-2026-0005","2026-01-20","2026-02-12","Invoiced",15000.00,0.00,15000.00,"USD","Net 45","DDP",40,"aa9b0c1d-2e3f-4a5b-8c9d-0e1f2a3b4c5d"
+"5e6f7081-92a3-4bcd-def0-556677889900","PO-2026-0006","2026-01-22","2026-02-08","Approved",6800.00,1292.00,8092.00,"EUR","Net 30","DAP",16,"3f3b8c2e-8b6a-4a7a-9a9a-1f2d3c4b5a60"
+"6f708192-a3b4-4cde-ef01-667788990011","PO-2026-0007","2026-01-25","2026-02-18","Created",4300.00,817.00,5117.00,"EUR","2% 10, Net 30","DAP",12,"8a0f1a6b-0d12-4c22-9ed3-0c7e2a9b1c11"

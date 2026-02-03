@@ -1,0 +1,95 @@
+{
+  "_version": "1.57.0",
+  "sap.app": {
+    "id": "com.schwarz.vendor.orders",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "dataSources": {
+      "mainService": {
+        "uri": "/odata/v4/catalog/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "4.0"
+        }
+      }
+    },
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.120.0",
+      "libs": {
+        "sap.fe.core": {},
+        "sap.fe.templates": {},
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "models": {
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "synchronizationMode": "None",
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      },
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.schwarz.vendor.orders.i18n.i18n"
+        }
+      }
+    },
+    "routing": {
+      "routes": [
+        {
+          "pattern": ":?query:",
+          "name": "OrdersList",
+          "target": "OrdersList"
+        },
+        {
+          "pattern": "Orders({key}):?query:",
+          "name": "OrdersObjectPage",
+          "target": "OrdersObjectPage"
+        }
+      ],
+      "targets": {
+        "OrdersList": {
+          "type": "Component",
+          "id": "OrdersList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "entitySet": "Orders",
+              "variantManagement": "Page",
+              "navigation": {
+                "Orders": {
+                  "detail": {
+                    "route": "OrdersObjectPage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OrdersObjectPage": {
+          "type": "Component",
+          "id": "OrdersObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "entitySet": "Orders"
+            }
+          }
+        }
+      }
+    }
+  }
+}
